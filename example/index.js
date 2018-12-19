@@ -62,6 +62,12 @@ let raffle = new Raffle(spritejs, {
   style: style
 });
 
+// 点击抽检按钮，可运行动画开始抽奖，也可以提示无权限、用户抽奖次数完等等
+raffle.on("click", function() {
+  // 开始转盘动画，并分发start事件
+  raffle.start();
+});
+
 //开始抽奖动画，通知外部，在点击转盘内圆后通知
 raffle.on("start", function() {
   // 模拟从服务器得到抽奖结果

@@ -212,12 +212,13 @@ export default class Raffle {
     });
 
     circle3.on("click", (evt) => {
-      this.stopLightAnimation = false;
-      this.ligthAnimate({ that: this, lightArray: lightArray });
-      that.animate({ snapshot: snapshot, that: that, evt: evt });
+      this.dispatchEvent("click");
+      // this.stopLightAnimation = false;
+      // this.ligthAnimate({ that: this, lightArray: lightArray });
+      // that.animate({ snapshot: snapshot, that: that, evt: evt });
     });
 
-    this.on("click", function() {
+    this.on("start", function() {
       const evt = {
         target: null
       };
@@ -232,7 +233,7 @@ export default class Raffle {
     if (!that.rotating) {
       that.choujiang.attr({ font: " small-caps bold 22px Arial" });
       that.result = -1;
-      that.dispatchEvent("start");
+      // that.dispatchEvent("start");
       that.rotating = true;
       snapshot
         .animate(
@@ -328,7 +329,7 @@ export default class Raffle {
   }
 
   start() {
-    this.dispatchEvent("click");
+    this.dispatchEvent("start");
   }
   // 设置抽奖结果
   setResult(index) {
