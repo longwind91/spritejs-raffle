@@ -1,4 +1,4 @@
-# sprite-raffle
+# spritejs-raffle
 
 自定义样式的抽奖组件，canvas 抽奖圆盘，转成图片让动画流畅运行
 
