@@ -82,8 +82,8 @@ let raffle = new Raffle(spritejs, {
 });
 
 // 点击抽检按钮，可运行动画开始抽奖，也可以提示无权限、用户抽奖次数完等等
-raffle.on("click", function() {
-  // 开始转盘动画，并分发start事件
+raffle.on("startButtonClick", function() {
+  // 开始转盘动画，分发start事件
   raffle.start();
 });
 
@@ -102,7 +102,6 @@ raffle.on("start", function() {
 
 raffle.on("ready", function() {
   console.log("资源加载完毕");
-
   // 开始转盘动画，并分发start事件
   raffle.start();
 });

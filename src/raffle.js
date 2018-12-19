@@ -212,7 +212,7 @@ export default class Raffle {
     });
 
     circle3.on("click", (evt) => {
-      this.dispatchEvent("click");
+      this.dispatchEvent("startButtonClick");
       // this.stopLightAnimation = false;
       // this.ligthAnimate({ that: this, lightArray: lightArray });
       // that.animate({ snapshot: snapshot, that: that, evt: evt });
