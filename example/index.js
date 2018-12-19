@@ -83,7 +83,6 @@ raffle.on("start", function() {
 
 raffle.on("ready", function() {
   console.log("资源加载完毕");
-
   // 开始转盘动画，并分发start事件
   raffle.start();
 });
