@@ -12,7 +12,7 @@ npm start
 
 访问 http://localhost:9092 查看具体 demo
 
-<image src="example/demo.jpg" style="width:100%">
+<image src="example/images/demo.png" style="width:100%">
 
 ### 使用
 
