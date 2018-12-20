@@ -284,7 +284,7 @@ export default class Raffle {
           }
         )
         .finished.then(() => {
-          console.log(that);
+          // console.log(that);
           if (that[_result] < 0) {
             that[_rotating] = false;
             that[_stopLightAnimation] = true;
@@ -359,6 +359,7 @@ export default class Raffle {
     return arr;
   }
 
+  // 开始动画
   start() {
     this.dispatchEvent("start");
   }
