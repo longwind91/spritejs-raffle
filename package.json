@@ -1,7 +1,7 @@
 {
-  "name": "sprite-draggable",
-  "version": "0.0.9",
-  "description": "let sprite can draggable",
+  "name": "spritejs-raffle",
+  "version": "0.0.1",
+  "description": "raffle circle",
   "main": "src/index.js",
   "esnext": {
     "./lib/index.js": "./src/index.js"
@@ -12,10 +12,10 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js"
   },
-  "author": "yaotaiyang",
+  "author": "LongwindLee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spritejs/sprite-draggable/issues"
+    "url": "https://github.com/LongwindLee/spritejs-raffle/issues"
   },
   "devDependencies": {
     "ava": "^0.25.0",
@@ -52,7 +52,7 @@
     ],
     "babel": "inherit"
   },
-  "homepage": "https://github.com/spritejs/sprite-draggable",
+  "homepage": "https://github.com/LongwindLee/spritejs-raffle",
   "dependencies": {
     "babel-decorators-runtime": "^0.2.0",
     "babel-runtime": "^6.26.0"
